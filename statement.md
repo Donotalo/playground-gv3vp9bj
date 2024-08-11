@@ -53,10 +53,14 @@ following command to enable some useful libraries:
 
 ```bash
 # Install dependent software
-sudo apt install libass-dev
+sudo apt install libassa-3.5-5-dev
 
 # Configure with necessary library support
-./configure --arch=x86_64 --target-os=mingw32 --cross-prefix=x86_64-w64-mingw32- --enable-libass  --enable-libbluray --enable-libdav1d --enable-libdavs2  --enable-libfdk-aac --enable-libkvazaar --enable-libmp3lame  --enable-libopencv  --enable-libopenh264  --enable-librav1e --enable-libtwolame --enable-libvvenc  --enable-libx264  --enable-libx265 --enable-openssl --enable-gpl --enable-nonfree
+./configure --arch=x86_64 --target-os=mingw32 --cross-prefix=x86_64-w64-mingw32- \
+    --enable-gpl --enable-nonfree \
+    --enable-libass     --enable-libbluray   --enable-libdav1d   --enable-libdavs2     --enable-libfdk-aac \
+    --enable-libkvazaar --enable-libmp3lame  --enable-libopencv  --enable-libopenh264  --enable-librav1e \
+    --enable-libtwolame --enable-libvvenc    --enable-libx264    --enable-libx265      --enable-openssl
 ```
 
 Build `ffmpeg` for windows:
