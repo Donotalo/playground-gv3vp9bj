@@ -15,16 +15,24 @@ sudo apt update
 sudo apt -y upgrade
 ```
 
-Install [`Git`](https://git-scm.com/):
+Install & configure [`Git`](https://git-scm.com/). Make sure to use your name and email address below:
 
 ```bash
 sudo apt -y install git
+git config --global user.name "Your name"
+git config --global user.email x@y.com
+git config --global init.defaultBranch main
 ```
 
-```bash
-# Install cross compiler and tools
-sudo apt install gcc-mingw-w64-x86-64-win32  mingw-w64-tools
+Install cross compilation GCC compiler & necessary tools:
 
+```bash
+sudo apt install gcc-mingw-w64-x86-64-win32  mingw-w64-tools
+```
+
+Now run the following commands to build ffmpeg for Windows:
+
+```bash
 # Install other software necessary to compile ffmpeg
 sudo apt install nasm
 
