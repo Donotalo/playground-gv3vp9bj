@@ -9,7 +9,7 @@ wsl --install Debian
 
 Or, simply run `wsl` to start currently installed Linux on WSL.
 
-WSL will eventually launch Linux terminal. Update the OS && install build tools:
+WSL will eventually launch Linux terminal. Update the OS & install build tools:
 
 ```bash
 sudo apt update
