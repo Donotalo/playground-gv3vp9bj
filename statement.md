@@ -1,5 +1,3 @@
-# Introduction
-
 This Tutorial shows a journey of building Windows binary from inside Windows Subsystem for Linux (WSL). In the WSL, Debian 12 will be used. The software that will be built is [`ffmpeg`](https://ffmpeg.org/).
 
 ```bash
@@ -15,4 +13,10 @@ cd ffmpeg
 
 # Configure ffmpeg
 ./configure --arch=x86_64 --target-os=mingw32 --prefix="C:\ffmpeg" --cross-prefix=x86_64-w64-mingw32-
+
+# Build ffmpeg
+make -j$(nproc)
+
+# Find Windows executables
+ls -lath | grep ffmpeg
 ```
