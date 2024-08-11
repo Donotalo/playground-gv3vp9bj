@@ -1,6 +1,6 @@
-# Welcome!
+# Introduction
 
-This Bash template lets you get started quickly with a simple one-page playground.
+This Tutorial shows a journey of building Windows binary from inside Windows Subsystem for Linux (WSL). In the WSL, Debian 12 will be used.
 
 ```bash runnable
 echo "Hello World!"
