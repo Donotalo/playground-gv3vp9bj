@@ -48,5 +48,5 @@ cd ffmpeg
 make -j$(nproc)
 
 # Find Windows executables
-ls -lath | grep ffmpeg
+ls -lath | grep exe
 ```
