@@ -49,7 +49,7 @@ cd ffmpeg
 ```
 
 The above command will build a very minimal version of `ffmpeg` which won't have much usefulness (like it doesn't support H.265 encoding). Use the
-following command to enable some useful libraries:
+following command to enable some useful libraries. For all configuration options, run `./configure --help`.
 
 ```bash
 # Install dependent software
