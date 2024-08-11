@@ -7,7 +7,7 @@ Open Windows Terminal. If no Linux is installed in WSL, run the following comman
 wsl --install Debian
 ```
 
-Or, simply run `wsl` to start currently installed Linux on WSL.
+Or, simply run `wsl` to start currently installed Linux on WSL. The Linux commands below assumes Debian is installed.
 
 WSL will eventually launch Linux terminal. Update the OS & install build tools:
 
