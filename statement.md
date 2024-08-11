@@ -53,7 +53,7 @@ following command to enable some useful libraries. For all configuration options
 
 ```bash
 # Install dependent software
-sudo apt install libassa-3.5-5-dev
+sudo apt install libass-dev
 
 # Configure with necessary library support
 ./configure --arch=x86_64 --target-os=mingw32 --cross-prefix=x86_64-w64-mingw32- \
