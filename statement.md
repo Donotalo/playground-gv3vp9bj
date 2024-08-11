@@ -27,7 +27,7 @@ git config --global init.defaultBranch main
 Install cross compilation GCC compiler & necessary tools:
 
 ```bash
-sudo apt install gcc-mingw-w64-x86-64-win32  mingw-w64-tools
+sudo apt install gcc-mingw-w64-x86-64-win32 mingw-w64-tools
 ```
 
 Now run the following commands to build ffmpeg for Windows:
