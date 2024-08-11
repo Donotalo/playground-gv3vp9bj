@@ -8,11 +8,12 @@ wsl --install Debian
 
 After the installation, Linux terminal will be started.
 
-Update the OS:
+Update the OS && install build tools:
 
 ```bash
-sudo apt update
-sudo apt -y upgrade
+sudo apt update && \
+     apt -y upgrade && \
+     apt -y install build-essential
 ```
 
 Install & configure [`Git`](https://git-scm.com/). Make sure to use your name and email address below:
