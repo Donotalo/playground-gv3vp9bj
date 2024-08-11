@@ -32,7 +32,8 @@ Install GCC cross compiler & necessary tools:
 sudo apt install gcc-mingw-w64-x86-64-win32 mingw-w64-tools
 ```
 
-It will install `x86_64-w64-mingw32-gcc` in `/usr/bin/` which is the cross compiler. Run the following commands to download the source code and build `ffmpeg` for Windows:
+It will install `x86_64-w64-mingw32-gcc` in `/usr/bin/` which is the cross compiler. Run the following commands to download the source code and
+build `ffmpeg` for Windows:
 
 ```bash
 # Install other software necessary to compile ffmpeg
@@ -52,7 +53,8 @@ make -j$(nproc)
 ls -lath | grep exe
 ```
 
-Exit WSL. Back in the Windows Terminal, create a directory & copy the binaries. Make sure to fix the source and destination locations.
+Exit WSL. Back in the Windows Terminal, create a directory & copy the binaries. Make sure to fix the source and destination locations in the commands
+below.
 
 ```terminal
 exit
