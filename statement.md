@@ -41,7 +41,7 @@ git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
 cd ffmpeg
 
 # Configure ffmpeg
-./configure --arch=x86_64 --target-os=mingw32 --prefix="C:\ffmpeg" --cross-prefix=x86_64-w64-mingw32-
+./configure --arch=x86_64 --target-os=mingw32 --cross-prefix=x86_64-w64-mingw32-
 
 # Build ffmpeg
 make -j$(nproc)
