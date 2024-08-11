@@ -32,7 +32,7 @@ Install GCC cross compiler & necessary tools:
 sudo apt install gcc-mingw-w64-x86-64-win32 mingw-w64-tools
 ```
 
-Now run the following commands to build ffmpeg for Windows:
+It will install `x86_64-w64-mingw32-gcc` in `/usr/bin/` which is the cross compiler. Run the following commands to download the source code and build `ffmpeg` for Windows:
 
 ```bash
 # Install other software necessary to compile ffmpeg
