@@ -34,7 +34,7 @@ sudo apt install gcc-mingw-w64-x86-64-win32 mingw-w64-tools
 ```
 
 It will install `x86_64-w64-mingw32-gcc` in `/usr/bin/` which is the cross compiler. It can be used to compile other `gcc` based projects too. Run the
-following commands to download the source code and build `ffmpeg` for Windows:
+following commands to download the source code and configure `ffmpeg` for Windows:
 
 ```bash
 # Install other software necessary to compile ffmpeg
@@ -43,10 +43,27 @@ sudo apt install nasm
 # Clone ffmpeg repository
 git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
 cd ffmpeg
+```
 
+```bash
 # Configure ffmpeg
 ./configure --arch=x86_64 --target-os=mingw32 --cross-prefix=x86_64-w64-mingw32-
+```
 
+The above command will build a very minimal version of `ffmpeg` which won't have much usefulness (like it doesn't support H.265 encoding). Use the
+following command to enable some useful libraries:
+
+```bash
+# Install dependent software
+sudo apt install libass-dev
+
+# Configure with necessary library support
+./configure --arch=x86_64 --target-os=mingw32 --cross-prefix=x86_64-w64-mingw32- --enable-libass  --enable-libbluray --enable-libdav1d --enable-libdavs2  --enable-libfdk-aac --enable-libkvazaar --enable-libmp3lame  --enable-libopencv  --enable-libopenh264  --enable-librav1e --enable-libtwolame --enable-libvvenc  --enable-libx264  --enable-libx265 --enable-openssl --enable-gpl --enable-nonfree
+```
+
+Build `ffmpeg` for windows:
+
+```bash
 # Build ffmpeg
 make -j$(nproc)
 
