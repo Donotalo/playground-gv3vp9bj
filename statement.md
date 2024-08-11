@@ -1,14 +1,14 @@
 This Tutorial shows a journey of building Windows binary from inside Windows Subsystem for Linux (WSL). In the WSL, Debian 12 will be used. The software that will be built is [`ffmpeg`](https://ffmpeg.org/).
 
-Open Windows Terminal and run the following command to install Debian in WSL:
+Open Windows Terminal. If no Linux is installed in WSL, run the following command to install Debian in WSL:
 
 ```terminal
 wsl --install Debian
 ```
 
-After the installation, Linux terminal will be started.
+Or, simply run `wsl` to start currently installed Linux on WSL.
 
-Update the OS && install build tools:
+WSL will eventually launch Linux terminal. Update the OS && install build tools:
 
 ```bash
 sudo apt update
