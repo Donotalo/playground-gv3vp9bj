@@ -2,7 +2,7 @@ This Tutorial shows a journey of building Windows binary from inside Windows Sub
 
 Open Windows Terminal and run the following command to install Debian in WSL:
 
-```Terminal
+```terminal
 wsl --install Debian
 ```
 
@@ -49,4 +49,14 @@ make -j$(nproc)
 
 # Find Windows executables
 ls -lath | grep exe
+```
+
+Exit WSL. Back in the Windows Terminal, create a directory & copy the binaries. Make sure to fix the source and destination locations.
+
+```terminal
+exit
+$ffmpeg_dir = "C:\ffmpeg"
+mkdir $ffmpeg_dir
+copy .\ffmpeg\ffmpeg.exe $ffmpeg_dir
+copy .\ffmpeg\ffprobe.exe $ffmpeg_dir
 ```
