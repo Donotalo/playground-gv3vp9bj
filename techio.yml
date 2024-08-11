@@ -1,4 +1,4 @@
-title: Simple Bash Template
+title: 'Cross Compilation: WSL to Windows'
 plan:
 - title: Bash Snippet
   statement: statement.md
