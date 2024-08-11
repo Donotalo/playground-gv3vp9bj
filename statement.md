@@ -1,4 +1,4 @@
-This simple tutorial shows how to build a Windows executable from inside Windows Subsystem for Linux (WSL). In the WSL, Debian 12 will be used.
+This simple tutorial shows how to build a Windows executable from inside Windows Subsystem for Linux (WSL). In the WSL, Debian will be used.
 The software that will be built is [`ffmpeg`](https://ffmpeg.org/).
 
 Open Windows Terminal. If no Linux is installed in WSL, run the following command to install Debian in WSL:
