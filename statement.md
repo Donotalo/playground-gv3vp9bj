@@ -64,4 +64,4 @@ copy .\ffmpeg\ffmpeg.exe $ffmpeg_dir
 copy .\ffmpeg\ffprobe.exe $ffmpeg_dir
 ```
 
-Now `ffmpeg` is accessible from `C:\ffmpeg\ffmpeg.exe`.
+`ffmpeg` is accessible from `C:\ffmpeg\ffmpeg.exe`.
